@@ -1,213 +1,262 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>COMP 1537 Assignment 2</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>COMP 1537 Assignment 2</title>
-  <meta name="description" content="" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="index.css" />
-</head>
-
-<body>
-  <header></header>
-  <div id="main-wrapper">
-    <aside>
-      <nav id="nav-bar">
-        <ul id="nav-list">
-          <li><a href="#division-element"><code>&lt;div&gt;</code></a></li>
-          <li><a href="#unordered-list-element"><code>&lt;ul&gt;</code></a></li>
-          <li><a href="#ordered-list-element"><code>&lt;ol&gt;</code></a></li>
-          <li><a href="#table-element"><code>&lt;table&gt;</code></a></li>
-          <li><a href="#image-element"><code>&lt;img&gt;</code></a></li>
-          <li><a href="#paragraph-element"><code>&lt;p&gt;</code></a></li>
-          <li><a href="#span-element"><code>&lt;span&gt;</code></a></li>
-          <li><a href="#bold-element"><code>&lt;b&gt;</code></a></li>
-          <li><a href="#idiomatic-element"><code>&lt;i&gt;</code></a></li>
-          <li><a href="#abbreviation-element"><code>&lt;abbr&gt;</code></a></li>
-        </ul>
-      </nav>
-    </aside>
-    <main id="main-content">
-
-      <div id="division-element" class="section-content">
-        <h1>&lt;div&gt;: The Content Division element</h1>
-        <p>
-          The <strong><code>&lt;div&gt;</code></strong> element is the
-          generic container for flow content. It has no effect on the content or
-          layout until styled in some way using CSS.
-        </p>
-        <p class="example">
-          Any kind of content here. Such as &lt;p&gt;, &lt;table&gt;. You name
-          it!
-        </p>
-      </div>
-
-      <div id="unordered-list-element" class="section-content">
-        <h1>&lt;ul&gt;: The Unordered List element</h1>
-        <p>
-          The <strong><code>&lt;ul&gt;</code></strong>
-          element represents an unordered list of items, typically rendered
-          as a bulleted list.
-        </p>
-        <ul>
-          <li>Milk</li>
-          <li>
-            Cheese
-            <ul>
-              <li>Blue cheese</li>
-              <li>Feta</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-
-      <div id="ordered-list-element" class="section-content">
-        <h1>&lt;ol&gt;: The Ordered List element</h1>
-        <p>
-          The <strong><code>&lt;ol&gt;</code></strong>
-          element represents an ordered list of items — typically rendered
-          as a numbered list.
-        </p>
-        <ol>
-          <li>Mix flour, baking powder, sugar, and salt.</li>
-          <li>In another bowl, mix eggs, milk, and oil.</li>
-          <li>Stir both mixtures together.</li>
-          <li>Fill muffin tray 3/4 full.</li>
-          <li>Bake for 20 minutes.</li>
-        </ol>
-      </div>
-
-      <div id="table-element" class="section-content">
-        <h1>&lt;table&gt;: The Table element</h1>
-        <p>
-          The <strong><code>&lt;table&gt;</code></strong>
-          element represents tabular data — that is, information presented
-          in a two-dimensional table comprised of rows and columns of cells
-          containing data.
-        </p>
-        <table>
-          <thead>
-            <tr>
-              <th colspan="4">Multiplication Table</th>
-            </tr>
-          </thead>
-          <tr>
-            <td></td>
-            <th scope="col">1</th>
-            <th scope="col">2</th>
-            <th scope="col">3</th>
-          </tr>
-          <tr>
-            <th scope="row">1</th>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>2</td>
-            <td>4</td>
-            <td>6</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>3</td>
-            <td>6</td>
-            <td>9</td>
-          </tr>
-        </table>
-      </div>
-
-      <div id="image-element" class="section-content">
-        <h1>&lt;img&gt;: The Image Embed element</h1>
-        <p>
-          The <strong><code>&lt;img&gt;</code></strong>
-          element embeds an image into the document.
-        </p>
-        <figure class="example">
-          <img src="https://dummyimage.com/520x320/000/fff" alt="black dummy image." />
-          <figcaption>
-            The above example shows usage of the
-            <code>&lt;img&gt;</code> element.
-          </figcaption>
-        </figure>
-      </div>
-
-      <div id="paragraph-element" class="section-content">
-        <h1>&lt;p&gt;: The Paragraph element</h1>
-        <p>The <strong><code>&lt;p&gt;</code></strong> element represents a
-          paragraph.</p>
-        <div class="example" id="paragraphExample">
-          <p>Separating paragraphs with blank lines is easiest
-            for readers to scan, but they can also be separated
-            by indenting their first lines. This is often used
-            to take up less space, such as to save paper in print.</p>
-
-          <p>Writing that is intended to be edited, such as school
-            papers and rough drafts, uses both blank lines and
-            indentation for separation. In finished works, combining
-            both is considered redundant and amateurish.</p>
-
-          <p>In very old writing, paragraphs were separated with a
-            special character: ¶, the <i>pilcrow</i>. Nowadays, this
-            is considered claustrophobic and hard to read.</p>
-        </div>
-      </div>
-
-      <div id="span-element" class="section-content">
-        <h1>&lt;span&gt;: The Content Span element</h1>
-        <p>The <strong><code>&lt;span&gt;</code></strong> element is a generic
-          inline container for phrasing content, which does not inherently represent anything. It can be used to group
-          elements for styling purposes.</p>
-        <div class="example">
-          <p>Add the <span class="ingredient">basil</span>, <span class="ingredient">pine nuts</span> and <span
-              class="ingredient">garlic</span> to a blender and blend into a paste.</p>
-
-          <p>Gradually add the <span class="ingredient">olive oil</span> while running the blender slowly.</p>
-        </div>
-      </div>
-
-      <div id="bold-element" class="section-content">
-        <h1>&lt;b&gt;: The Bring Attention To element</h1>
-        <p>The <strong><code>&lt;b&gt;</code></strong> element is used to draw
-          the reader's attention to the element's contents, which are not otherwise granted special importance.
-        </p>
-        <div class="example">
+  <body>
+    <header></header>
+    <div id="main-wrapper">
+      <aside>
+        <nav id="nav-bar">
+          <ul id="nav-list">
+            <li>
+              <a href="#division-element"><code>&lt;div&gt;</code></a>
+            </li>
+            <li>
+              <a href="#unordered-list-element"><code>&lt;ul&gt;</code></a>
+            </li>
+            <li>
+              <a href="#ordered-list-element"><code>&lt;ol&gt;</code></a>
+            </li>
+            <li>
+              <a href="#table-element"><code>&lt;table&gt;</code></a>
+            </li>
+            <li>
+              <a href="#image-element"><code>&lt;img&gt;</code></a>
+            </li>
+            <li>
+              <a href="#paragraph-element"><code>&lt;p&gt;</code></a>
+            </li>
+            <li>
+              <a href="#span-element"><code>&lt;span&gt;</code></a>
+            </li>
+            <li>
+              <a href="#bold-element"><code>&lt;b&gt;</code></a>
+            </li>
+            <li>
+              <a href="#idiomatic-element"><code>&lt;i&gt;</code></a>
+            </li>
+            <li>
+              <a href="#abbreviation-element"><code>&lt;abbr&gt;</code></a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <main id="main-content">
+        <div id="division-element" class="section-content">
+          <h1>&lt;div&gt;: The Content Division element</h1>
           <p>
-            This article describes several <b>text-level</b> elements. It
-            explains their usage in an <b>HTML</b> document.
+            The <strong><code>&lt;div&gt;</code></strong> element is the generic
+            container for flow content. It has no effect on the content or
+            layout until styled in some way using CSS.
+          </p>
+          <p class="example">
+            Any kind of content here. Such as &lt;p&gt;, &lt;table&gt;. You name
+            it!
           </p>
         </div>
-      </div>
 
-      <div id="idiomatic-element" class="section-content">
-        <h1>&lt;i&gt;: The Idiomatic Text element</h1>
-        <p>The <strong><code>&lt;i&gt;</code></strong> element represents a range
-          of text that is set off from the normal text for some reason, such as idiomatic text, technical terms,
-          taxonomical designations, among others. </p>
-        <div class="example">
-          <p>I looked at it and thought <i>This can't be real!</i></p>
+        <div id="unordered-list-element" class="section-content">
+          <h1>&lt;ul&gt;: The Unordered List element</h1>
+          <p>
+            The <strong><code>&lt;ul&gt;</code></strong>
+            element represents an unordered list of items, typically rendered as
+            a bulleted list.
+          </p>
+          <ul>
+            <li>Milk</li>
+            <li>
+              Cheese
+              <ul>
+                <li>Blue cheese</li>
+                <li>Feta</li>
+              </ul>
+            </li>
+          </ul>
         </div>
-      </div>
 
-      <div id="abbreviation-element" class="section-content">
-        <h1>&lt;abbr&gt;: The Abbreviation element</h1>
-        <p>The <strong><code>&lt;abbr&gt;</code></strong> element represents an abbreviation or acronym. When including
-          an
-          abbreviation or acronym, provide a full expansion of the term in plain text on first use, along with the
-          <strong><code>&lt;abbr&gt;</code></strong> to mark up the abbreviation.
-        </p>
-        <div class="example">
-          <p>You can use <abbr>CSS</abbr> (Cascading Style Sheets) to style your <abbr>HTML</abbr> (HyperText Markup
-            Language). Using style sheets, you can keep your <abbr>CSS</abbr> presentation layer and <abbr>HTML</abbr>
-            content layer separate. This is called "separation of concerns."</p>
+        <div id="ordered-list-element" class="section-content">
+          <h1>&lt;ol&gt;: The Ordered List element</h1>
+          <p>
+            The <strong><code>&lt;ol&gt;</code></strong>
+            element represents an ordered list of items — typically rendered as
+            a numbered list.
+          </p>
+          <ol>
+            <li>Mix flour, baking powder, sugar, and salt.</li>
+            <li>In another bowl, mix eggs, milk, and oil.</li>
+            <li>Stir both mixtures together.</li>
+            <li>Fill muffin tray 3/4 full.</li>
+            <li>Bake for 20 minutes.</li>
+          </ol>
         </div>
-      </div>
-    </main>
-  </div>
-  <footer>© 2023 Kevin Liang</footer>
-</body>
 
+        <div id="table-element" class="section-content">
+          <h1>&lt;table&gt;: The Table element</h1>
+          <p>
+            The <strong><code>&lt;table&gt;</code></strong>
+            element represents tabular data — that is, information presented in
+            a two-dimensional table comprised of rows and columns of cells
+            containing data.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th colspan="4">Multiplication Table</th>
+              </tr>
+            </thead>
+            <tr>
+              <td></td>
+              <th scope="col">1</th>
+              <th scope="col">2</th>
+              <th scope="col">3</th>
+            </tr>
+            <tr>
+              <th scope="row">1</th>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>2</td>
+              <td>4</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>3</td>
+              <td>6</td>
+              <td>9</td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="image-element" class="section-content">
+          <h1>&lt;img&gt;: The Image Embed element</h1>
+          <p>
+            The <strong><code>&lt;img&gt;</code></strong>
+            element embeds an image into the document.
+          </p>
+          <figure class="example">
+            <img
+              src="https://dummyimage.com/520x320/000/fff"
+              alt="black dummy image."
+            />
+            <figcaption>
+              The above example shows usage of the
+              <code>&lt;img&gt;</code> element.
+            </figcaption>
+          </figure>
+        </div>
+
+        <div id="paragraph-element" class="section-content">
+          <h1>&lt;p&gt;: The Paragraph element</h1>
+          <p>
+            The <strong><code>&lt;p&gt;</code></strong> element represents a
+            paragraph.
+          </p>
+          <div class="example" id="paragraphExample">
+            <p>
+              Separating paragraphs with blank lines is easiest for readers to
+              scan, but they can also be separated by indenting their first
+              lines. This is often used to take up less space, such as to save
+              paper in print.
+            </p>
+
+            <p>
+              Writing that is intended to be edited, such as school papers and
+              rough drafts, uses both blank lines and indentation for
+              separation. In finished works, combining both is considered
+              redundant and amateurish.
+            </p>
+
+            <p>
+              In very old writing, paragraphs were separated with a special
+              character: ¶, the <i>pilcrow</i>. Nowadays, this is considered
+              claustrophobic and hard to read.
+            </p>
+          </div>
+        </div>
+
+        <div id="span-element" class="section-content">
+          <h1>&lt;span&gt;: The Content Span element</h1>
+          <p>
+            The <strong><code>&lt;span&gt;</code></strong> element is a generic
+            inline container for phrasing content, which does not inherently
+            represent anything. It can be used to group elements for styling
+            purposes.
+          </p>
+          <div class="example">
+            <p>
+              Add the <span class="ingredient">basil</span>,
+              <span class="ingredient">pine nuts</span> and
+              <span class="ingredient">garlic</span> to a blender and blend into
+              a paste.
+            </p>
+
+            <p>
+              Gradually add the <span class="ingredient">olive oil</span> while
+              running the blender slowly.
+            </p>
+          </div>
+        </div>
+
+        <div id="bold-element" class="section-content">
+          <h1>&lt;b&gt;: The Bring Attention To element</h1>
+          <p>
+            The <strong><code>&lt;b&gt;</code></strong> element is used to draw
+            the reader's attention to the element's contents, which are not
+            otherwise granted special importance.
+          </p>
+          <div class="example">
+            <p>
+              This article describes several <b>text-level</b> elements. It
+              explains their usage in an <b>HTML</b> document.
+            </p>
+          </div>
+        </div>
+
+        <div id="idiomatic-element" class="section-content">
+          <h1>&lt;i&gt;: The Idiomatic Text element</h1>
+          <p>
+            The <strong><code>&lt;i&gt;</code></strong> element represents a
+            range of text that is set off from the normal text for some reason,
+            such as idiomatic text, technical terms, taxonomical designations,
+            among others.
+          </p>
+          <div class="example">
+            <p>I looked at it and thought <i>This can't be real!</i></p>
+          </div>
+        </div>
+
+        <div id="abbreviation-element" class="section-content">
+          <h1>&lt;abbr&gt;: The Abbreviation element</h1>
+          <p>
+            The <strong><code>&lt;abbr&gt;</code></strong> element represents an
+            abbreviation or acronym. When including an abbreviation or acronym,
+            provide a full expansion of the term in plain text on first use,
+            along with the <strong><code>&lt;abbr&gt;</code></strong> to mark up
+            the abbreviation.
+          </p>
+          <div class="example">
+            <p>
+              You can use <abbr>CSS</abbr> (Cascading Style Sheets) to style
+              your <abbr>HTML</abbr> (HyperText Markup Language). Using style
+              sheets, you can keep your <abbr>CSS</abbr> presentation layer and
+              <abbr>HTML</abbr> content layer separate. This is called
+              "separation of concerns."
+            </p>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer>© 2023 Kevin Liang</footer>
+  </body>
 </html>
