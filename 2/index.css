@@ -39,6 +39,7 @@ td {
   border: 1px solid #444444;
 }
 
+/* pseudo */
 table thead tr:first-child {
   background-color: #393939;
   border-color: currentColor;
@@ -56,6 +57,7 @@ li {
   padding: 0.2rem;
 }
 
+/* pseudo */
 li:nth-child(odd) {
   background: #393939;
 }

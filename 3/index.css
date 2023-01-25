@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header[role="nav"] {
+  grid-area: header;
+}
+
+main[role="main"] {
+  grid-area: main;
+}
+
+footer[role="footer"] {
+  grid-area: footer;
+}
+
+div[role="item"] {
+  grid-area: item;
+}
+
+ol {
+  padding: 0;
+  list-style-type: none;
+}
+
+/* and future subgrids */
+.grid {
+  /* placeholder height */
+  height: 100vh;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.grid {
+  grid-template-areas: "header" "main" "footer";
+  width: 100%;
+}
+
+@media all and (min-width: 1281px) {
+  .grid {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    grid-template-areas:
+      "header main"
+      "footer footer";
+    grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
+    grid-template-rows: minmax(0, 9fr) minmax(0, 1fr);
+  }
+  #navbar-list {
+    flex-direction: column;
+  }
+  #nav-container {
+    flex-direction: column;
+  }
+  .content-item {
+    max-width: 20%;
+  }
+}
+
+@media all and (min-width: 701px) and (max-width: 1280px) {
+  .grid {
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr) minmax(0, 5fr) minmax(0, 1fr);
+  }
+  #navbar-list {
+    flex-direction: row;
+  }
+  #news {
+    display: none;
+  }
+}
+
+@media all and (max-width: 700px) {
+  #content {
+    flex-wrap: wrap;
+  }
+  #news {
+    display: none;
+  }
+  #nav-container {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+  .content-item {
+    width: 100%;
+  }
+}
+
+header {
+  background-color: orange !important;
+}
+
+main {
+  background-color: pink !important;
+}
+
+footer {
+  background-color: burlywood !important;
+}
+
+#content {
+  border: solid 1px black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-item {
+  display: flex;
+  border: solid 1px black;
+}
+
+#navbar-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+#nav-container {
+  display: flex;
+}
+
+#hero {
+  border: solid 1px black;
+}
+
+#subscribe {
+  border: solid 1px black;
+}
+
+.subgrid-item {
+  margin: 1em;
+}
