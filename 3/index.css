@@ -1,3 +1,9 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -21,9 +27,17 @@ div[role="item"] {
   grid-area: item;
 }
 
+img {
+  max-width: 100%;
+}
+
 ol {
   padding: 0;
   list-style-type: none;
+}
+
+#hero {
+  overflow: hidden;
 }
 
 /* and future subgrids */
@@ -40,16 +54,18 @@ ol {
   width: 100%;
 }
 
+/* Desktop */
 @media all and (min-width: 1281px) {
   .grid {
     margin-left: auto;
     margin-right: auto;
-    max-width: 70%;
+    max-width: 1200px;
+    min-width: 1200px;
     grid-template-areas:
       "header main"
       "footer footer";
     grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
-    grid-template-rows: minmax(0, 9fr) minmax(0, 1fr);
+    grid-template-rows: minmax(0, 9fr) auto;
   }
   #navbar-list {
     flex-direction: column;
@@ -62,6 +78,7 @@ ol {
   }
 }
 
+/* Tablet */
 @media all and (min-width: 701px) and (max-width: 1280px) {
   .grid {
     grid-template-areas:
@@ -69,7 +86,8 @@ ol {
       "main"
       "footer";
     grid-template-columns: minmax(0, 1fr);
-    grid-template-rows: minmax(0, 1fr) minmax(0, 5fr) minmax(0, 1fr);
+    grid-template-rows: auto minmax(0, 5fr) auto;
+    padding: 2em;
   }
   #navbar-list {
     flex-direction: row;
@@ -80,6 +98,9 @@ ol {
 }
 
 @media all and (max-width: 700px) {
+  .grid {
+    grid-template-rows: auto minmax(0, 5fr) auto;
+  }
   #content {
     flex-wrap: wrap;
   }
@@ -118,17 +139,18 @@ footer {
   border: solid 1px black;
 }
 
+#navbar {
+  width: 100%;
+}
+
 #navbar-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 #nav-container {
   display: flex;
-}
-
-#hero {
-  border: solid 1px black;
+  align-items: center;
 }
 
 #subscribe {
