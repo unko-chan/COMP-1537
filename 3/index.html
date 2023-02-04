@@ -1,138 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="index.css" />
-</head>
-
-<body>
-  <div class="grid">
-    <header id="nav-container" class="grid-item">
-      <div id="logo">
-        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="#000000" viewBox="0 0 256 256">
-          <rect width="256" height="256" fill="none"></rect>
-          <line x1="128" y1="192" x2="128" y2="224" fill="none" stroke="#000000" stroke-linecap="round"
-            stroke-linejoin="round" stroke-width="16"></line>
-          <circle cx="84" cy="140" r="12"></circle>
-          <circle cx="172" cy="140" r="12"></circle>
-          <line x1="128" y1="48" x2="128" y2="88" fill="none" stroke="#000000" stroke-linecap="round"
-            stroke-linejoin="round" stroke-width="16"></line>
-          <polyline points="144 176 128 192 112 176" fill="none" stroke="#000000" stroke-linecap="round"
-            stroke-linejoin="round" stroke-width="16"></polyline>
-          <line x1="96" y1="53" x2="96" y2="88" fill="none" stroke="#000000" stroke-linecap="round"
-            stroke-linejoin="round" stroke-width="16"></line>
-          <line x1="160" y1="53" x2="160" y2="88" fill="none" stroke="#000000" stroke-linecap="round"
-            stroke-linejoin="round" stroke-width="16"></line>
-          <path
-            d="M32,136V51.3a8,8,0,0,1,13.7-5.6L67.6,67.6h0A100.8,100.8,0,0,1,128,48a100.8,100.8,0,0,1,60.4,19.6h0l21.9-21.9A8,8,0,0,1,224,51.3V136c0,48.6-43,88-96,88S32,184.6,32,136Z"
-            fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
-        </svg>
-      </div>
-      <nav id="navbar">
-        <ol id="navbar-list">
-          <li>
-            <div class="navbar-item">
-              <a class="nav-link" href="#">
-                <svg class="nav-image" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
-                  <rect width="256" height="256" fill="none"></rect>
-                  <path
-                    d="M224,177.3V78.7a8.1,8.1,0,0,0-4.1-7l-88-49.5a7.8,7.8,0,0,0-7.8,0l-88,49.5a8.1,8.1,0,0,0-4.1,7v98.6a8.1,8.1,0,0,0,4.1,7l88,49.5a7.8,7.8,0,0,0,7.8,0l88-49.5A8.1,8.1,0,0,0,224,177.3Z"
-                    fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16">
-                  </path>
-                  <polyline points="222.9 74.6 128.9 128 33.1 74.6" fill="none" stroke="#000000" stroke-linecap="round"
-                    stroke-linejoin="round" stroke-width="16"></polyline>
-                  <line x1="128.9" y1="128" x2="128" y2="234.8" fill="none" stroke="#000000" stroke-linecap="round"
-                    stroke-linejoin="round" stroke-width="16"></line>
-                </svg>
-                <div>
-                  Nav Item
-                </div>
-              </a>
-            </div>
-          </li>
-          <li class="navbar-item"><a href="#">Nav Item</a></li>
-          <li class="navbar-item"><a href="#">Nav Item</a></li>
-          <li class="navbar-item"><a href="#">Nav Item</a></li>
-          <li class="navbar-item"><a href="#">Nav Item</a></li>
-        </ol>
-      </nav>
-      <div id="news">
-        <div id="news-text">
-          <h3>Placeholder Text</h3>
-          <p>Placeholder Text</p>
-          <a href="#">Read more</a>
+  <body>
+    <div class="grid">
+      <header id="nav-container" class="grid-item">
+        <div id="logo">
+          <img width="100" height="100" src="./Assets/SVG/K..svg" alt="logo" />
         </div>
-        <div id="news-text">
-          <h3>Placeholder Text</h3>
-          <p>Placeholder Text</p>
-          <a href="#">Read more</a>
-        </div>
-        <div id="news-text">
-          <h3>Placeholder Text</h3>
-          <p>Placeholder Text</p>
-          <a href="#">Read more</a>
-        </div>
-      </div>
-    </header>
-    <!-- <div class="grid-item" role="logo">logo</div>
+        <nav id="navbar">
+          <ol id="navbar-list">
+            <li>
+              <div class="navbar-item">
+                <a class="nav-link" href="#">
+                  <svg
+                    class="nav-image"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="#000000"
+                    viewBox="0 0 256 256"
+                  >
+                    <rect width="256" height="256" fill="none"></rect>
+                    <path
+                      d="M224,177.3V78.7a8.1,8.1,0,0,0-4.1-7l-88-49.5a7.8,7.8,0,0,0-7.8,0l-88,49.5a8.1,8.1,0,0,0-4.1,7v98.6a8.1,8.1,0,0,0,4.1,7l88,49.5a7.8,7.8,0,0,0,7.8,0l88-49.5A8.1,8.1,0,0,0,224,177.3Z"
+                      fill="none"
+                      stroke="#000000"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="16"
+                    ></path>
+                    <polyline
+                      points="222.9 74.6 128.9 128 33.1 74.6"
+                      fill="none"
+                      stroke="#000000"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="16"
+                    ></polyline>
+                    <line
+                      x1="128.9"
+                      y1="128"
+                      x2="128"
+                      y2="234.8"
+                      fill="none"
+                      stroke="#000000"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="16"
+                    ></line>
+                  </svg>
+                  <div>Work</div>
+                </a>
+              </div>
+            </li>
+            <li class="navbar-item"><a href="#">About</a></li>
+            <li class="navbar-item"><a href="#">Contact</a></li>
+            <li class="navbar-item"><a href="#">Github</a></li>
+            <li class="navbar-item"><a href="#">LinkedIn</a></li>
+          </ol>
+        </nav>
+        <div id="news">About me</div>
+      </header>
+      <!-- <div class="grid-item" role="logo">logo</div>
           <div class="grid-item" role="menu">menu</div> -->
-    <main class="grid-item" role="main">
-      <div id="hero">
-        <img id="hero-image" src="https://dummyimage.com/1920x1080/000/fff" />
-      </div>
-      <div id="subscribe" class="subgrid-item">
-        <div class="subscribe-left">Placeholder Text</div>
-        <div class="subscribe-right">
-          <form action=""><button>Sign Up For Free</button></form>
+      <main class="grid-item" role="main">
+        <div id="hero">
+          <img id="hero-image" src="https://dummyimage.com/1920x1080/000/fff" />
         </div>
-      </div>
-      <div id="content" class="subgrid-item">
-        <div role="item" class="content-item">
-          <div class="content-item-image">
-            <img src="https://dummyimage.com/1920x1080/000/fff" />
-          </div>
-          <div class="content-item-text">
-            <h2>Placeholder Text</h2>
-            <p>Mauris eleifend ornare congue. Aliquam ut leo eget ligula tincidunt eleifend. Pellentesque et mi ornare,
-              mollis neque id, molestie sem. Vivamus volutpat sit amet libero eu gravida. Donec ac elementum nibh. Nam
-              varius eu ante sed sagittis. Integer consequat urna eget mauris consectetur, eu porta velit fermentum.</p>
+        <div id="subscribe" class="subgrid-item">
+          <div class="subscribe-left">Placeholder Text</div>
+          <div class="subscribe-right">
+            <form action=""><button>Sign Up For Free</button></form>
           </div>
         </div>
-        <div role="item" class="content-item">
-          <div class="content-item-image">
-            <img src="https://dummyimage.com/1920x1080/000/fff" />
+        <div>Some of my latest work</div>
+        <div id="content" class="subgrid-item">
+          <div role="item" class="content-item">
+            <div class="content-item-image">
+              <img src="https://dummyimage.com/1920x1080/000/fff" />
+            </div>
+            <div class="content-item-text">
+              <h2>Placeholder Text</h2>
+              <p>
+                Mauris eleifend ornare congue. Aliquam ut leo eget ligula
+                tincidunt eleifend. Pellentesque et mi ornare, mollis neque id,
+                molestie sem.
+              </p>
+            </div>
           </div>
-          <div class="content-item-text">
-            <h2>Placeholder Text</h2>
-            <p>Placeholder Text</p>
+          <div role="item" class="content-item">
+            <div class="content-item-image">
+              <img src="https://dummyimage.com/1920x1080/000/fff" />
+            </div>
+            <div class="content-item-text">
+              <h2>Placeholder Text</h2>
+              <p>Placeholder Text</p>
+            </div>
+          </div>
+          <div role="item" class="content-item">
+            <div class="content-item-image">
+              <img src="https://dummyimage.com/1920x1080/000/fff" />
+            </div>
+            <div class="content-item-text">
+              <h2>Placeholder Text</h2>
+              <p>Placeholder Text</p>
+            </div>
+          </div>
+          <div role="item" class="content-item">
+            <div class="content-item-image">
+              <img src="https://dummyimage.com/1920x1080/000/fff" />
+            </div>
+            <div class="content-item-text">
+              <h2>Placeholder Text</h2>
+              <p>Placeholder Text</p>
+            </div>
           </div>
         </div>
-        <div role="item" class="content-item">
-          <div class="content-item-image">
-            <img src="https://dummyimage.com/1920x1080/000/fff" />
-          </div>
-          <div class="content-item-text">
-            <h2>Placeholder Text</h2>
-            <p>Placeholder Text</p>
-          </div>
-        </div>
-        <div role="item" class="content-item">
-          <div class="content-item-image">
-            <img src="https://dummyimage.com/1920x1080/000/fff" />
-          </div>
-          <div class="content-item-text">
-            <h2>Placeholder Text</h2>
-            <p>Placeholder Text</p>
-          </div>
-        </div>
-      </div>
-    </main>
-    <footer class="grid-item" role="footer">footer</footer>
-  </div>
-</body>
-
+      </main>
+      <footer class="grid-item" role="footer">footer</footer>
+    </div>
+  </body>
 </html>
