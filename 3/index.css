@@ -4,6 +4,10 @@ html {
   margin: 0;
 }
 
+figure {
+  margin: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -47,6 +51,7 @@ div[role="item"] {
 
 img {
   max-width: 100%;
+  border-bottom: solid 1px #00000026;
 }
 
 ol {
@@ -56,6 +61,9 @@ ol {
 
 #hero {
   overflow: hidden;
+  background-color: #333;
+  color: #fff;
+  padding: 5em;
 }
 
 h1 {
@@ -255,7 +263,25 @@ h3 {
 }
 
 footer {
-  background-color: burlywood !important;
+  margin-top: 2em;
+  padding: 1em;
+  border-top: solid 1px #00000019;
+}
+
+.content-item-image {
+  position: relative;
+}
+
+.image-text {
+  position: absolute;
+  left: 10px;
+  bottom: 12px;
+  border: solid 1.5px #006fc94e;
+  background-color: #fff;
+  padding: 6px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 8px;
 }
 
 #content {
@@ -293,12 +319,12 @@ footer {
 }
 
 .text-style {
-  color: #813afd;
+  color: #ff48de;
 }
 
 #subscribe-button {
   background-color: #fff;
-  border: 1px solid #813afd;
+  border: 1px solid #ff48de;
   padding: 0.8em;
   font-size: 18px;
   font-weight: bold;
@@ -306,7 +332,7 @@ footer {
   border-radius: 0px;
   padding-left: 1em;
   padding-right: 1em;
-  color: #813afd;
+  color: #ff48de;
 }
 
 #projects {
@@ -314,4 +340,10 @@ footer {
   margin-right: 1em;
   border-top: solid 1px #333;
   margin-bottom: 2em;
+}
+
+.content-item {
+  border-radius: 8px;
+  overflow: hidden;
+  border-color: #00000026;
 }
