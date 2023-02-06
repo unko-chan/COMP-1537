@@ -37,16 +37,12 @@ header[role="nav"] {
   grid-area: header;
 }
 
-main[role="main"] {
+main{
   grid-area: main;
 }
 
-footer[role="footer"] {
+footer {
   grid-area: footer;
-}
-
-div[role="item"] {
-  grid-area: item;
 }
 
 img {
@@ -239,6 +235,9 @@ h3 {
   }
   .content-item {
     width: 100%;
+    margin-bottom: 4em;
+    border-bottom: solid 1px #333;
+    border-radius: 0px !important;
   }
   .nav-text {
     display: none;
@@ -271,6 +270,23 @@ footer {
 .content-item-image {
   position: relative;
 }
+
+.content-item-text {
+  padding: 0 1em 1em 1em;
+}
+
+.content-item-text-header {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ff48de;
+  border: solid 1px #ff48de;
+  padding: 10px;
+}
+
+.content-item-text-body {
+  line-height: 1.5;
+}
+
 
 .image-text {
   position: absolute;
@@ -346,4 +362,14 @@ footer {
   border-radius: 8px;
   overflow: hidden;
   border-color: #00000026;
+}
+
+
+#about-header {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+#about-body {
+  margin-right: 1em;
+  line-height: 1.5;
 }

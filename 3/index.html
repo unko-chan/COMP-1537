@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>1537 Assignment 3</title>
     <link rel="stylesheet" href="index.css" />
   </head>
 
@@ -25,7 +25,7 @@
                     src="./Assets/SVG/Work.svg"
                     alt="work"
                   />
-                  <span class="nav-text">Work</span>
+                  <aside class="nav-text">Work</aside>
                 </a>
               </div>
             </li>
@@ -37,7 +37,7 @@
                   src="./Assets/SVG/About.svg"
                   alt="work"
                 />
-                <span class="nav-text">About</span></a
+                <aside class="nav-text">About</aside></a
               >
             </li>
             <li class="navbar-item">
@@ -48,7 +48,7 @@
                   src="./Assets/SVG/Contact.svg"
                   alt="work"
                 />
-                <span class="nav-text">Contact</span></a
+                <aside class="nav-text">Contact</aside></a
               >
             </li>
             <li class="navbar-item">
@@ -59,7 +59,7 @@
                   src="./Assets/SVG/Github.svg"
                   alt="work"
                 />
-                <span class="nav-text">Github</span></a
+                <aside class="nav-text">Github</aside></a
               >
             </li>
             <li class="navbar-item">
@@ -70,16 +70,23 @@
                   src="./Assets/SVG/LinkedIn.svg"
                   alt="work"
                 />
-                <span class="nav-text">LinkedIn</span></a
+                <aside class="nav-text">LinkedIn</aside></a
               >
             </li>
           </ol>
         </nav>
-        <div id="news">About me</div>
+        <div id="news">
+          <h1 id="about-header">About me</h1>
+          <p id="about-body">
+            I am a student at BCIT studying Computer Science Technology. I am
+            passionate about web development and technology. Thank you for
+            visiting my website!
+          </p>
+        </div>
       </header>
       <!-- <div class="grid-item" role="logo">logo</div>
           <div class="grid-item" role="menu">menu</div> -->
-      <main class="grid-item" role="main">
+      <main class="grid-item">
         <div id="hero">
           <h1>Hi, my name is</h1>
           <h2>Kevin Liang.</h2>
@@ -94,80 +101,100 @@
         </div>
         <div id="subscribe" class="subgrid-item">
           <div>
-            <form action="">
+            <form>
               <button id="subscribe-button">LET'S CHAT</button>
             </form>
           </div>
         </div>
         <div id="projects"><h1>Check out some of my projects</h1></div>
         <div id="content" class="subgrid-item">
-          <div role="item" class="content-item">
+          <div class="content-item">
             <div class="content-item-image">
               <figure>
                 <img src="./Assets/images/nwhacks.png" />
-                <div class="image-text">
-                  <figcaption>
-                    <a href="">/shopalive</a>
-                  </figcaption>
-                </div>
+                <figcaption class="image-text">
+                  <a href="">/shopalive</a>
+                </figcaption>
               </figure>
             </div>
             <div class="content-item-text">
-              <p>
-                Mauris eleifend ornare congue. Aliquam ut leo eget ligula
-                tincidunt eleifend. Pellentesque et mi ornare, mollis neque id,
-                molestie sem.
+              <p class="content-item-text-header">
+                2023 NW Hacks Sponsorship Winner
+              </p>
+              <p class="content-item-text-body">
+                Shopalive is an innovative way of connecting products and brands
+                to their target audience. Utilizing Livepeer Studio SDK, we are
+                able to upload videos and stream to our users in a mobile-first
+                user interface. We aim to be a one stop shop for users, allowing
+                quick and easy payments when users want to buy a product.
               </p>
             </div>
           </div>
-          <div role="item" class="content-item">
+          <div class="content-item">
             <div class="content-item-image">
               <figure>
                 <img src="./Assets/images/qds.jpg" />
-                <div class="image-text">
-                  <figcaption>
-                    <a href="">/truk-simulator</a>
-                  </figcaption>
-                </div>
+                <figcaption class="image-text">
+                  <a href="">/truk-simulator</a>
+                </figcaption>
               </figure>
             </div>
             <div class="content-item-text">
-              <p>Placeholder Text</p>
+              <p class="content-item-text-header">
+                QDS-Hacks-2023 Third Place Winner
+              </p>
+              <p class="content-item-text-body">
+                A 2D trucking simulation using JavaScript, HTML, and CSS which
+                allows mining truck drivers to identify optimal driving
+                techniques, such as acceleration and speed, to reduce fuel
+                consumption.
+              </p>
             </div>
           </div>
-          <div role="item" class="content-item">
+          <div class="content-item">
             <div class="content-item-image">
               <figure>
-                <img src="./Assets/images/storm hacks.png" />
-                <div class="image-text">
-                  <figcaption>
-                    <a href="">/cryptostory</a>
-                  </figcaption>
-                </div>
+                <img src="./Assets/images/storm-hacks.png" />
+                <figcaption class="image-text">
+                  <a href="">/cryptostory</a>
+                </figcaption>
               </figure>
             </div>
             <div class="content-item-text">
-              <p>Placeholder Text</p>
+              <p class="content-item-text-header">
+                2020 SFU Storm Hacks Hackathon Project
+              </p>
+              <p class="content-item-text-body">
+                nft hackathon project. collect playable characters and items on
+                the blockchain. Play real-time with your party. Invest early and
+                ride our game to the moon.
+              </p>
             </div>
           </div>
-          <div role="item" class="content-item">
+          <div class="content-item">
             <div class="content-item-image">
               <figure>
                 <img src="./Assets/images/shopify.png" />
-                <div class="image-text">
-                  <figcaption>
-                    <a href="">/shoppie-awards</a>
-                  </figcaption>
-                </div>
+                <figcaption class="image-text">
+                  <a href="">/shoppie-awards</a>
+                </figcaption>
               </figure>
             </div>
             <div class="content-item-text">
-              <p>Placeholder Text</p>
+              <p class="content-item-text-header">
+                2021 Shopify Developer Internship Challenge
+              </p>
+              <p class="content-item-text-body">
+                A a webpage that can search OMDB for movies, and allow the user
+                to save their favourite films they feel should be up for
+                nomination. When they've selected 5 nominees they should be
+                notified they're finished.
+              </p>
             </div>
           </div>
         </div>
       </main>
-      <footer class="grid-item" role="footer">
+      <footer class="grid-item">
         <div id="footer-text">
           <p>© 2021 Kevin Liang</p>
         </div>
