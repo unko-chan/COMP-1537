@@ -9,8 +9,24 @@ body {
   padding: 0;
   display: flex;
   justify-content: center;
-  background: #121212;
+  background: #fff;
   min-height: 100vh;
+  color: #333;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+a {
+  color: #0070c9;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+.nav-text {
+  padding-left: 1em;
 }
 
 header[role="nav"] {
@@ -42,6 +58,25 @@ ol {
   overflow: hidden;
 }
 
+h1 {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin: 0;
+}
+
+h2 {
+  font-size: 5em;
+  font-weight: 650;
+  margin: 0;
+  margin-top: 0.3em;
+}
+
+h3 {
+  font-size: 5em;
+  font-weight: 650;
+  margin: 0;
+}
+
 /* and future subgrids */
 .grid {
   /* placeholder height */
@@ -61,6 +96,8 @@ ol {
   display: flex;
   flex-direction: column;
   padding: 0.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .nav-image {
@@ -88,17 +125,33 @@ ol {
     flex-direction: column;
     align-items: flex-start;
   }
-  .content-item:not(:first-child) {
-    margin-left: 1em;
-  }
   .nav-link {
     display: flex;
     align-items: center;
+  }
+  .content-item {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px rgb(181, 181, 181);
+    border-radius: 10px;
+    margin-top: 1em;
+    flex: 1 0 35%;
+    margin: 0 1em 1em 0;
+    overflow: hidden;
+  }
+  #subscribe-button {
+    font-size: 12px;
+  }
+  #hero {
+    margin-top: 5em;
   }
 }
 
 /* Tablet */
 @media all and (min-width: 701px) and (max-width: 1280px) {
+  #subscribe-button {
+    font-size: 15px;
+  }
   .grid {
     grid-template-areas:
       "header"
@@ -116,6 +169,7 @@ ol {
   }
   .navbar-item {
     flex-direction: column;
+    flex-wrap: wrap;
   }
   .nav-image {
     display: block;
@@ -124,8 +178,39 @@ ol {
   #news {
     display: none;
   }
-  .content-item:not(:first-child) {
-    margin-left: 1em;
+  .content-item {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px black;
+    margin-top: 1em;
+    flex: 1 0 35%;
+    margin: 0 1em 1em 0;
+  }
+  h1 {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 4.2em;
+    font-weight: 650;
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 4.2em;
+    font-weight: 650;
+    margin: 0;
+  }
+  .nav-text {
+    display: block;
+    padding: 0;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 }
 
@@ -147,8 +232,25 @@ ol {
   .content-item {
     width: 100%;
   }
-  .nav-image {
+  .nav-text {
     display: none;
+  }
+  h1 {
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 3em;
+    font-weight: 650;
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 3em;
+    font-weight: 650;
+    margin: 0;
   }
 }
 
@@ -159,13 +261,6 @@ footer {
 #content {
   display: flex;
   justify-content: space-between;
-}
-
-.content-item {
-  display: flex;
-  flex-direction: column;
-  border: solid 1px black;
-  margin-top: 1em;
 }
 
 #navbar {
@@ -179,11 +274,44 @@ footer {
 
 #nav-container {
   display: flex;
+  margin-bottom: 2em;
 }
 
 #subscribe {
-  border: solid 1px black;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-bottom: 3em;
+  margin-top: 2em;
+}
+
+#content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.text-block {
+  display: block;
+}
+
+.text-style {
+  color: #813afd;
+}
+
+#subscribe-button {
+  background-color: #fff;
+  border: 1px solid #813afd;
+  padding: 0.8em;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 0px;
+  padding-left: 1em;
+  padding-right: 1em;
+  color: #813afd;
+}
+
+#projects {
+  padding-top: 2em;
+  margin-right: 1em;
+  border-top: solid 1px #333;
+  margin-bottom: 2em;
 }
